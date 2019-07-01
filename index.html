@@ -4,32 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
     <title>Tip Calculator</title>
 </head>
 <body>
     
     <div class="calculator-container">
-        <div>
+        <div class="title">
             <h1>Tip Calculator</h1>
         </div>
-        <div>
-            <p>Percentage to tip:</p>
+        <form class="data-for-calculator">
+            <input type="text" name="bill-amount" placeholder="Amount of bill">
+            <input type="text" name="tip-percentage" placeholder="Percentage to tip">
+            <input type="text" name="people-number" placeholder="Number of people">
+        </form>
+        <div class="button-flex">
+            <input type="button" id="calculate-button" value="Calculate">
+            <input type="button" id="reset-button" value="Reset">
         </div>
-        <div>
-            <p>Number of people:</p>
-        </div>
-        <div>
-            <button>Calculate</button>
-            <button>Reset</button>
-        </div>
-        <div>
-            <p>Tip amount:</p>
-        </div>
-        <div>
-            <p>Total to pay:</p>
-        </div>
-        <div>
-            <p>Total per person:</p>
+        <div class="calculate-result">
+            <div>
+                <p>Tip amount:</p>
+            </div>
+            <div>
+                <p>Total to pay:</p>
+            </div>
+            <div>
+                <p>Total per person:</p>
+            </div>
         </div>
 
     </div>
