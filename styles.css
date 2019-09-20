@@ -81,4 +81,18 @@ h1 {
     margin: 5px 0;
     color: #ffffff;
     font-size: 20px;
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+}
+
+.result > p:first-child {
+    margin-right: 10px;
+}
+
+.result > p:last-child {
+    font-size: 20px;
 }

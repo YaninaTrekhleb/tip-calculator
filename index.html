@@ -14,27 +14,32 @@
             <h1>Tip Calculator</h1>
         </div>
         <form class="data-for-calculator">
-            <input type="text" name="bill-amount" placeholder="Amount of bill">
-            <input type="text" name="tip-percentage" placeholder="Percentage to tip">
-            <input type="text" name="people-number" placeholder="Number of people">
+            <input id="amountBill" type="number" name="bill-amount" placeholder="Amount of bill">
+            <input id="percentageTip" type="number" name="tip-percentage" placeholder="Percentage to tip">
+            <input id="peopleNumber" type="number" name="people-number" placeholder="Number of people">
         </form>
         <div class="button-flex">
-            <input type="button" id="calculate-button" value="Calculate">
             <input type="button" id="reset-button" value="Reset">
+            <input onclick="calculateTip()" type="button" id="calculate-button" value="Calculate">
         </div>
         <div class="calculate-result">
-            <div>
+            <div class="result">
                 <p>Tip amount:</p>
+                <p id="tipAmount"></p>
             </div>
-            <div>
+            <div class="result">
                 <p>Total to pay:</p>
+                <p id="totalPay"></p>
             </div>
-            <div>
+            <div class="result">
                 <p>Total per person:</p>
+                <p id="perPerson"></p>
             </div>
         </div>
 
     </div>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
