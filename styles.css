@@ -1,98 +1,116 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
-    max-width: 700px;
-    margin: auto;
-    background-image: url("dan-gold-E6HjQaB7UEA-unsplash.jpg");
-    background-size: 100%;
+  font-family: "Roboto", sans-serif;
+  max-width: 700px;
+  margin: auto;
+  background-image: url("dan-gold-E6HjQaB7UEA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 1px 1px 1px #000;
 }
-
 
 .calculator-container {
-    background-color: rgb(155, 168, 159, 0.4);
-    height: 400px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 150px;
-    margin-left: 130px;
-    border-radius: 20px;
+  background-color: rgb(155, 168, 159, 0.4);
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: 130px;
+  border-radius: 20px;
 }
 
-.data-for-calculator{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 50px 10px 50px;
+.data-for-calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 50px 10px 50px;
 }
 
 .data-for-calculator input {
-    margin: 10px;
-    display: flex;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    border: 1px solid #7a8388;
-    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.31);
+  margin: 10px;
+  display: flex;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  border: 1px solid #7a8388;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.31);
 }
 
 .title h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    font-weight: 500;
-    color: #ecae35;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 500;
+  color: #ecae35;
 }
 
 h1 {
-    margin: 0 10px 10px 10px;
+  margin: 0 10px 10px 10px;
 }
 
 .button-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#calculate-button, #reset-button {
-    margin: 0 15px 10px 20px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    background-color: #fabc2b;
-    color: #ffffff;
-    border: none;
-    border-radius: 10px;
+#calculate-button,
+#reset-button {
+  margin: 0 15px 10px 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: #fabc2b;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000;
+  border: none;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+#calculate-button:hover,
+#reset-button:hover {
+  background-color: orangered;
 }
 
 #reset-button {
-    padding: 3px 20px;
+  padding: 3px 20px;
 }
 
 .calculate-result {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px 0 50px;
 }
 
 .calculate-result p {
-    margin: 5px 0;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: bold;
+  margin: 5px 0;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .result {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .result > p:first-child {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .result > p:last-child {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+.result p {
+  text-shadow: 2px 2px 2px #000;
+}
+
+form label {
+  color: #fff;
 }
