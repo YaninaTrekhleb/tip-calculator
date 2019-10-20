@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
 
+html {
+    height: 100vh;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     max-width: 700px;
     margin: auto;
     background-image: url("dan-gold-E6HjQaB7UEA-unsplash.jpg");
     background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
 }
 
 
@@ -16,8 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 150px;
-    margin-left: 130px;
     border-radius: 20px;
 }
 
@@ -95,4 +104,11 @@ h1 {
 
 .result > p:last-child {
     font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-image: url("dan-gold-E6HjQaB7UEA-unsplash_vertical.jpg");
+        background-repeat: no-repeat;
+    }
 }
