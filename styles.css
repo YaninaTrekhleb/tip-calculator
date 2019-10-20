@@ -10,7 +10,7 @@ body {
 
 
 .calculator-container {
-    background-color: rgb(155, 168, 159, 0.4);
+    background-color: rgb(155, 168, 159, 0.7);
     height: 400px;
     width: 400px;
     display: flex;

@@ -1,15 +1,16 @@
 function calculateTip() {
-    const billAmount = document.getElementById('amountBill').value;
-    const tipPercentage = document.getElementById('percentageTip').value;
-    const peolpeNumber = document.getElementById('peopleNumber').value;
-   
+    const billAmount = parseInt(document.getElementById('amountBill').value);
+    const tipPercentage = parseInt(document.getElementById('percentageTip').value);
+    const peolpeNumber = parseInt(document.getElementById('peopleNumber').value);
+    // console.log(typeof billAmount, typeof tipPercentage, typeof peolpeNumber);
 
-    const finalTip = Math.floor((billAmount * (tipPercentage / 100)) / peolpeNumber);
-    const totalToPay = billAmount + finalTip;
+    const totalTip = Math.floor((billAmount * (tipPercentage / 100)));
+    const totalToPay = billAmount + totalTip;
+    const tipPerPerson = Math.floor(totalTip / peolpeNumber);
     
-    document.getElementById('tipAmount').innerText = finalTip;
+    document.getElementById('tipAmount').innerText = totalTip;
     document.getElementById('totalPay').innerText = totalToPay;
-    // document.getElementById('perPerson').innerText = finalTip;
+    document.getElementById('perPerson').innerText = tipPerPerson;
 
 }
 
