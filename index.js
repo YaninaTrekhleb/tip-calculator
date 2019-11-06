@@ -11,9 +11,9 @@ function calculateTip() {
     percentageTipElement.value = tipPercentage;
     peopleNumberElement.value = peolpeNumber;
 
-    const totalTip = Math.floor((billAmount * (tipPercentage / 100)));
+    const totalTip = Math.floor((billAmount * tipPercentage)) / 100;
     const totalToPay = billAmount + totalTip;
-    const tipPerPerson = Math.floor(totalTip / peolpeNumber);
+    const tipPerPerson = Math.floor(totalTip * 100 / peolpeNumber) / 100;
     
     document.getElementById('tipAmount').innerText = totalTip;
     document.getElementById('totalPay').innerText = totalToPay;
